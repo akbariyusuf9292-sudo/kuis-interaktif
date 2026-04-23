@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🧠 Kuis Interaktif</h1>
+
+  <!-- START SCREEN -->
+  <div id="startScreen" class="start-screen">
+    <h2>Siap untuk Kuis? 🤔</h2>
+    <p>Jika sudah siap, tekan tombol mulai</p>
+    <button onclick="startQuiz()">Mulai</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="quiz-box" id="quizBox" style="display:none;">
+
+    <p id="question"></p>
+
+    <div id="answers"></div>
+
+    <!-- tombol tetap sederhana (biar CSS lama aman) -->
+    <button id="nextBtn">Next</button>
+    <button id="backBtn">Back</button>
+    <button id="restartBtn" style="display:none;">Restart</button>
+
+    <p id="score"></p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
